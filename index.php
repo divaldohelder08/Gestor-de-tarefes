@@ -13,8 +13,8 @@
 
 <body>
     <?php
-    $pdo = new PDO('mysql:host=localhost;dbname=SoftCode', 'root', '1234');
-    if (!isset($_SESSION['login'])) {
+include('./confs/confi.php');
+if (!isset($_SESSION['login'])) {
         if (isset($_POST['user'])) {
             $nome = $_POST['nome'];
             $email = $_POST['email'];

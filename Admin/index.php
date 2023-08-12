@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,11 +9,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="../assets/style.css">
 </head>
-
+   
 <body>
     <?php
-    $pdo = new PDO('mysql:host=localhost;dbname=SoftCode', 'root', '1234');
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    include('../confs/confi.php');
  if (isset($_GET['Fdelete'])) {
         $id = (int) $_GET['Fdelete'];
         $pdo->exec("delete from user where id=$id");
@@ -259,5 +259,4 @@
         })
     </script>
 </body>
-
 </html>

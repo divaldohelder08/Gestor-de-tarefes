@@ -1,5 +1,5 @@
 <?php
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+include('../confs/confi.php');
 $sql = $pdo->prepare('select * from user where id=' . $_SESSION['login'] . '');
 $sql->execute();
 $values = $sql->fetchAll();
