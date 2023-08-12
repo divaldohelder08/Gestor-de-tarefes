@@ -32,8 +32,3 @@ Apois criada pode ser atribuida a qualquer um dos funcionarios cadastrados na qu
 <div  align="center"> 
   <a href = "mailto:divaldohelder08@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
 </div>
-<div>
-  <a href="https://visitcount.itsvg.in">
-    <img src="https://visitcount.itsvg.in/api?id=divaldohelder08&label=Profile%20Views&color=1&icon=8&pretty=false" />
-  </a>
-</div>
