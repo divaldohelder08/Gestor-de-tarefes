@@ -1,0 +1,61 @@
+
+    <div class="user">
+        <form method="post" class="log">
+            <div class="header">
+                <h2>User Login </h2>
+                <div class="btn" style="width: 50%;"><button id="adminlog" type="button">Admin Log</button></div>
+            </div>
+            <small style="margin-left: 18px">Porfavor prencha os campos</small>
+            <div class="body">
+                <div class="item">
+                    <label class="lb">Nome:</label>
+                    <input type="text" name="nome" class="ipt" id="nome" placeholder="Insira o seu nome" required>
+                </div>
+                <div class="item">
+                    <label class="lb">Email:</label>
+                    <input type="email" name="email" class="ipt" id="email" placeholder="Insira o seu email" required>
+                </div>
+                <div class="btn">
+                    <button type="submit" name="user">log in</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="Admin" style="display:none">
+        <form method="post" class="log">
+            <div class="header">
+                <h2>Admin Login </h2>
+                <div class="btn" style="width: 50%;"><button type="button" id="userlog">User Log</button></div>
+            </div>
+            <small style="margin-left: 18px">Porfavor prencha os campos</small>
+            <div class="body">
+                <div class="item">
+                    <label class="lb">Email:</label>
+                    <input type="email" name="email" class="ipt" id="nome"
+                        placeholder="Insira o Email do Admin" required>
+                </div>
+                <div class="item">
+                    <label class="lb">Senha:</label>
+                    <input type="number" name="pass" class="senha" placeholder="Insira a senha do admin" required>
+                </div>
+                <div class="btn">
+                    <button type="submit" name="ADM">log in</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <script>
+        const user = document.querySelector(".user")
+        const Admin = document.querySelector(".Admin")
+        const userlog = document.getElementById("userlog")
+        const adminlog = document.getElementById("adminlog")
+        adminlog.onclick = (() => {
+            user.style.display = "none"
+            Admin.style.display = "block"
+        })
+        userlog.onclick = (() => {
+            Admin.style.display = "none"
+            user.style.display = "block"
+        })
+    </script>

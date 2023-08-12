@@ -1,0 +1,138 @@
+
+
+.sing,
+.log {
+    background-color: lightslategray;
+    padding: 10px;
+    height: fit-content;
+    width: 350px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    padding: 15px 0px;
+    flex-wrap: wrap;
+}
+
+.body {
+    padding: 15px;
+
+}
+
+.item {
+    display: grid;
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+.item input {
+    width: 100%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 2px;
+    padding: 5px;
+    color: black;
+    background-color: transparent;
+
+}
+
+.item input::placeholder {
+    color: black;
+}
+
+.remeber {
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+.btn,
+.iputs {
+    width: 100%;
+}
+
+.iputs {
+    display: flex;
+
+}
+
+.iputs input {
+    width: 65px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #333;
+    margin: 5px;
+    outline: none;
+    font-size: 35px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+    text-align: center;
+}
+
+.a {
+    align-items: center;
+    border-radius: 2px;
+    border: none;
+    font-weight: bolder;
+    text-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+    flex-direction: column;
+    padding: 5px;
+    color: white;
+    background-color: #333;
+    margin: 5px;
+    transition: .5s;
+}
+
+.btn button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-radius: 2px;
+    border: none;
+    font-weight: bolder;
+    text-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+    flex-direction: column;
+    padding: 5px;
+    color: white;
+    background-color: #333;
+    margin: 5px;
+    margin-bottom: 15px;
+    transition: .5s;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn button:hover {
+    color: #333;
+    background-color: white;
+    text-shadow: none;
+}
+
+.foc {
+    transform: translateY(10px) translateX(10px);
+    background: lightslategrey;
+    width: fit-content;
+    border: 2px solid #333;
+    padding: 0 5px;
+}
+
+label {
+    transition: .5s;
+}
+
+.inside {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.inside button {
+    width: 25px;
+}

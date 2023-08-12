@@ -1,0 +1,408 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: gray;
+}
+
+a{
+    text-decoration: none;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #085f63;
+    height: 100vh;
+    font-family: monospace;
+}
+
+
+.things {
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 10px;
+    padding: 25px 50px;
+    display: flex;
+}
+
+.ting {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+
+.lista {
+    width: 325px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 51%);
+    border-radius: 10px;
+    height: 100%;
+    margin: 0 0 20px 0;
+    overflow: hidden;
+}
+
+.carrinho {
+    background: red;
+    width: 345px;
+    border: 3px solid white;
+    border-radius: 9px;
+    padding: 18px;
+}
+
+.some {
+    min-width: 900px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 51%);
+    border-radius: 10px;
+    height: 100%;
+    min-height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.Titem {
+    padding: 10px;
+    background: #085f63;
+    margin: 5px;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    gap: 4px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead tr {
+    border-bottom: 2px solid #e4e1e1;
+}
+
+thead th {
+    padding: 10px;
+}
+
+tbody tr td {
+    text-align: center;
+    padding: 10px;
+}
+
+tbody tr td:first-child {
+    text-align: start;
+}
+
+button {
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    border: none;
+    font-weight: 100;
+    width: 58px;
+    margin: 0px 5px;
+    font-size: 14px;
+}
+
+.red {
+    background: #ff1654;
+}
+
+.blue {
+    background: #03a9f4;
+}
+
+.green {
+    background: #4caf;
+}
+
+button:hover {
+    box-shadow: inset -7px 0px 45px -9px #085f63;
+}
+
+.BB {
+    border-bottom: 2px solid gray;
+    margin-bottom: 14px;
+}
+
+.add {
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.333) 0px 0px 15px;
+    height: 65px;
+    width: 65px;
+    z-index: 1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    bottom: 20px;
+    opacity: 0.5;
+    position: fixed;
+    right: 100px;
+    background: #4caf;
+    border: none;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+
+@keyframes wave {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.8);
+    }
+}
+
+.add .wa {
+    animation: 2s ease -0.3s infinite normal none running wave;
+    background-color: rgb(255 255 255);
+    border-radius: 50%;
+    height: 100%;
+    position: absolute;
+    transform: scale(1);
+    width: 100%;
+    z-index: -1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.add .wa::before,
+.add::before {
+    animation: 2s ease 0.7s infinite normal none running wave;
+    background: rgb(255 255 255);
+    border-radius: 50%;
+    content: "";
+    height: 100%;
+    position: absolute;
+    transform: scale(1);
+    width: 100%;
+    z-index: -1;
+}
+
+.add .wa::after,
+.add::after {
+    border-radius: 50%;
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.abs {
+    position: absolute;
+    background: #22222387;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+.spa {
+    border-radius: 50%;
+    padding: 10px;
+    background: #ffffff;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spa img {
+    width: 35px;
+}
+
+.op {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    position: absolute;
+    width: 100px;
+    z-index: 6;
+}
+
+/* top: -94px; */
+
+.spa {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20pt;
+    height: 50px;
+    justify-content: center;
+    position: absolute;
+    text-decoration: none;
+    transition: all 1s ease-in-out 0s;
+    width: 50px;
+    background: #085f63;
+
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.sing,
+.log {
+    background-color: white;
+    padding: 10px;
+    height: fit-content;
+    width: 350px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    padding: 15px 0px;
+    flex-wrap: wrap;
+}
+
+.body {
+    padding: 15px;
+
+}
+
+.item {
+    display: grid;
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+.item input {
+    width: 100%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 2px;
+    padding: 5px;
+    color: black;
+    background-color: transparent;
+
+}
+
+.item input::placeholder {
+    color: black;
+}
+
+.remeber {
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+.btn,
+.iputs {
+    width: 100%;
+}
+
+.iputs {
+    display: flex;
+
+}
+
+.iputs input {
+    width: 65px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #333;
+    margin: 5px;
+    outline: none;
+    font-size: 35px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+    text-align: center;
+}
+
+.a {
+    align-items: center;
+    border-radius: 2px;
+    border: none;
+    font-weight: bolder;
+    text-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+    flex-direction: column;
+    padding: 5px;
+    color: white;
+    background-color: #333;
+    margin: 5px;
+    transition: .5s;
+}
+
+.btn button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-radius: 2px;
+    border: none;
+    font-weight: bolder;
+    text-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+    flex-direction: column;
+    padding: 5px;
+    color: white;
+    background-color: #333;
+    margin: 5px;
+    margin-bottom: 15px;
+    transition: .5s;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn button:hover {
+    color: #333;
+    background-color: white;
+    text-shadow: none;
+}
+
+.foc {
+    transform: translateY(10px) translateX(10px);
+    background: lightslategrey;
+    width: fit-content;
+    border: 2px solid #333;
+    padding: 0 5px;
+}
+
+label {
+    transition: .5s;
+}
+
+.inside {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.inside button {
+    width: 25px;
+}
+
+.close {
+    background: #333333;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
