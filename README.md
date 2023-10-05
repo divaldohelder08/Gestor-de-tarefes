@@ -1,6 +1,3 @@
-# 
-
-Sistema de gestão de tarefas na qual pode ser crida tarefas de diferntes niveis tendo o nome, descrição, nivel e outros
 
 Apois criada pode ser atribuida a qualquer um dos funcionarios cadastrados na qual pode aceitar ou recusar qualquer tarefa
 
@@ -22,6 +19,17 @@ Este é um projecto feito com intuito de ajudar em pequenas e medias empresas, n
 - Dashboar para o adm
 - Dashboar para o funcionario
 
+> As tarefas estão compostas por:
+> 
+```diff
++ Nivel
++ nome
++ descrição
+! outros
+```
+
+
+
 Para a elaboração foi utilizado:
 
  - Javascript
@@ -39,7 +47,7 @@ Para a elaboração foi utilizado:
       <b>Visitors Count👋</b>
     </p>  
     <p align="center">
-      <img align="center" src="https://profile-counter.glitch.me/{NerdFix}/count.svg" />
+      <img align="center" src="https://profile-counter.glitch.me/{Gestor-de-tarefes}/count.svg" />
     </p> 
   <br>
 </div>
