@@ -29,7 +29,6 @@ Este é um projecto feito com intuito de ajudar em pequenas e medias empresas, n
 ```
 
 
-
 Para a elaboração foi utilizado:
 
  - Javascript
@@ -38,6 +37,10 @@ Para a elaboração foi utilizado:
  - php
  - Mysql
 
+
+
+## Base de dados
+Toda a base de dados encontra-se aqui [Mysql](https://github.com/divaldohelder08/Gestor-de-tarefes/blob/main/sql.sql), é só colar
     
 ## Por favor deixe uma 🌟
 
