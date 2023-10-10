@@ -47,7 +47,7 @@ Toda a base de dados encontra-se aqui [Mysql](https://github.com/divaldohelder08
 <div align="center">
   <br>
     <p align="centre">
-      <b>Visitors Count👋</b>
+      <b>Contagem de visitantas👋</b>
     </p>  
     <p align="center">
       <img align="center" src="https://profile-counter.glitch.me/{Gestor-de-tarefes}/count.svg" />
