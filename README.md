@@ -31,11 +31,11 @@ Este é um projecto feito com intuito de ajudar em pequenas e medias empresas, n
 
 Para a elaboração foi utilizado:
 
- - Javascript
- - css
- - html
- - php
- - Mysql
+ - Javascript;
+ - css;
+ - html;
+ - php;
+ - Mysql;
 
 
 
